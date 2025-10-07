@@ -1,18 +1,17 @@
 import React from "react";
-import { AppContent, AppSidebar, AppFooter, AppHeader } from '../components/index'
-
+// ../components/index.js
+import AppSidebar  from "../components/Sidebar";
+//import { AppSidebar } from "../components/Sidebar";
 const DefaultLayout = () =>{
     return(
-        <div>
+        <div>  
             <AppSidebar/>
             <div className="wrapper d-flex flex-column min-vh-100">
-                <AppHeader/>
+               <h1>BODY</h1> 
                 <div className="body flex-grow-1">
-                    <AppContent/>
-
                 </div>
 
-
+<h1>Footer</h1>
             </div>
         </div>
     )
