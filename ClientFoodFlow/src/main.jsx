@@ -6,9 +6,9 @@ import store from './store'
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ <React.StrictMode> {/*  Modo pa encontrar errores */}
     <Provider store={store}> {/*  para los useState globales*/} 
-      <BrowserRouter>  
+      <BrowserRouter>  {/*Para manejar las rutas*/}
         <App />
       </BrowserRouter>
     </Provider>
